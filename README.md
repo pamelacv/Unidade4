@@ -1,6 +1,8 @@
 # Unidade4
 Mapa de notificação de eventos baseado na geolocalização
-		
+
+Data de entrega: 20/11
+
 Alunos:
 Gustavo Bittencourt
 Pâmela Carolina Vieira
