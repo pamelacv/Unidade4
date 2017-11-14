@@ -18,7 +18,7 @@
     "flow-bin": "0.53.0",
     "jest-expo": "^22.0.0"
   },
-  "name": "mapa-eventos",
+  "name": "mapa-evento-v2",
   "version": "0.0.0",
   "description": "Hello Expo!",
   "author": null

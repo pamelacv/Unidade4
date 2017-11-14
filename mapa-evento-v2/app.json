@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "mapa-eventos",
+    "name": "mapa-evento-v2",
     "description": "No description",
-    "slug": "mapa-eventos",
+    "slug": "mapa-evento-v2",
     "privacy": "public",
     "sdkVersion": "22.0.0",
     "version": "1.0.0",
