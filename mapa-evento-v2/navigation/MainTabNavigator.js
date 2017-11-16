@@ -14,10 +14,10 @@ export default TabNavigator(
     Home: {
       screen: HomeScreen,
     },
-    Links: {
+    Eventos: {
       screen: LinksScreen,
     },
-    Settings: {
+    Perfil: {
       screen: SettingsScreen,
     },
   },
@@ -33,10 +33,10 @@ export default TabNavigator(
                 ? `ios-information-circle${focused ? '' : '-outline'}`
                 : 'md-information-circle';
             break;
-          case 'Links':
+          case 'Eventos':
             iconName = Platform.OS === 'ios' ? `ios-link${focused ? '' : '-outline'}` : 'md-link';
             break;
-          case 'Settings':
+          case 'Perfil':
             iconName =
               Platform.OS === 'ios' ? `ios-options${focused ? '' : '-outline'}` : 'md-options';
         }
