@@ -25,7 +25,7 @@ export default class LinksScreen extends React.Component {
           <View style={{ flexDirection: 'row' }}>
             <View style={styles.optionIconContainer}>
               <Image
-                source={require('C:/GitHub/Unidade4/mapa-evento-v2/assets/images/robot-dev.png')}
+                source={require('../assets/images/robot-dev.png')}
                 resizeMode="contain"
                 fadeDuration={0}
                 style={{ width: 20, height: 20, marginTop: 1 }}
