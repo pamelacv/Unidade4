@@ -4,12 +4,33 @@ import { AppLoading, Asset, Font } from 'expo';
 import { Ionicons } from '@expo/vector-icons';
 import RootNavigation from './navigation/RootNavigation';
 
+async function logIn() {
+  typeLoop = 'success';
+  do {
+	const { type, token } = await Expo.Facebook.logInWithReadPermissionsAsync('142811606341898', {
+		permissions: ['public_profile'],
+		});
+	typeLoop = type;
+		
+	} while (!(typeLoop === 'success'));
+	
+	// Get the user's name using Facebook's Graph API
+	const response = await fetch(
+	`https://graph.facebook.com/me?access_token=${token}`);
+	Alert.alert(
+	'Logged in!',
+	`Hi ${(await response.json()).name}!`,
+	);
+}
+
 export default class App extends React.Component {
   state = {
     isLoadingComplete: false,
   };
 
   render() {
+	logIn();
+  
     if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
       return (
         <AppLoading
