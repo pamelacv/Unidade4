@@ -34,24 +34,7 @@ const MyEventsScreen = ({ navigation }) => (
         </Text>
         <TextInput style={styles.formInput}/>
       </View>
-      <View>
-        <Text style={styles.optionsTitleText}>
-          Data início
-        </Text>
-        <TextInput style={styles.formInput}/>
-      </View>
-      <View>
-        <Text style={styles.optionsTitleText}>
-          Data fim
-        </Text>
-        <TextInput style={styles.formInput}/>
-      </View>
-      <View>
-        <Text style={styles.optionsTitleText}>
-          Endereço
-        </Text>
-        <TextInput style={styles.formInput}/>
-      </View>
+      
     </View>
   </ScrollView>
 );
