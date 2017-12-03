@@ -23,7 +23,7 @@ export default class HomeScreen extends React.Component {
 
     //Define o tipo de mapa (prop MapType do MapView) como satelite de inicio
     this.state = {
-      propriedadeMapType: "satellite"
+      propriedadeMapType: "standard"
     }
   }
 
