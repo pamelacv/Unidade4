@@ -6,20 +6,19 @@ import RootNavigation from './navigation/RootNavigation';
 
 async function logIn() {
   typeLoop = 'success';
+  tokenLoop = '';
   do {
 	const { type, token } = await Expo.Facebook.logInWithReadPermissionsAsync('142811606341898', {
 		permissions: ['public_profile'],
 		});
 	typeLoop = type;
+	tokenLoop = token;
 		
 	} while (!(typeLoop === 'success'));
 	
 	// Get the user's name using Facebook's Graph API
 	const response = await fetch(
-	`https://graph.facebook.com/me?access_token=${token}`);
-	Alert.alert(
-	'Logged in!',
-	`Hi ${(await response.json()).name}!`,
+	`https://graph.facebook.com/me?access_token=${tokenLoop}`
 	);
 }
 
